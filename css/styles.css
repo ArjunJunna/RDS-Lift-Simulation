@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header > h1 {
+  padding: 4px;
+}
+
+/* Form container */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form > label {
+  font-weight: bold;
+  margin: 1rem 0.5rem;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.form > input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form > button {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #b2b5b2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form > button:hover {
+  background-color: #727572;
+}
+
+button {
+  cursor: pointer;
+  width: fit-content;
+  margin: 0.4rem auto;
+}
+
+.buttons-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-box > button {
+  width: fit-content;
+  color: black;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+.floor-number {
+  text-align: center;
+  font-weight: 200;
+}
+
+.buttons-box > button:active {
+  background-color: rgb(96, 96, 96);
+}
+
+.floor {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  max-height: 110px;
+  height: 110px;
+  display: flex;
+  align-items: flex-end;
+  margin: 10px;
+  z-index: 1;
+}
+
+.lift {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 80px;
+  max-height: 80px;
+  width: 60px;
+  z-index: 2;
+  position: absolute;
+  left: 50px;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* DOORS */
+.door {
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  background-color: rgb(227, 223, 223);
+  width: 40px;
+  font-weight: bold;
+}
+
+.left-door {
+  color: gray;
+  padding-top: 30px;
+}
+
+.right-door {
+  color: gray;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 1rem;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .form > label {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .form > input {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .form > button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
