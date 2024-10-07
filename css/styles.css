@@ -158,3 +158,18 @@ button {
     padding: 1rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+    body{
+        width: 100%;
+    }
+    .floor{
+        max-height: 90px;
+        height: 90px;
+    }
+    .lift{
+        height: 60px;
+        max-height: 60px;
+        width: 40px;
+    }
+  }
